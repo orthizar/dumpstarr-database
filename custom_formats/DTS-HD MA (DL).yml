@@ -1,0 +1,18 @@
+name: DTS-HD MA (DL)
+description: DTS-HD MA audio paired with German Dual Language — offsets the DTS-HD MA deny for DL releases.
+tags:
+- Audio
+- Language
+- German
+conditions:
+- name: DTS-HD MA
+  type: release_title
+  pattern: DTS-HD MA
+  required: true
+  negate: false
+- name: German DL Title
+  type: release_title
+  pattern: German Dual Language
+  required: true
+  negate: false
+tests: []

@@ -1,0 +1,22 @@
+name: German Dual Language
+pattern: '(?i)german\s*\.?dl|(?<=\bGerman\b.*)(?<!\bWEB[-_. ])\bDL\b|\[DE\+[a-z]{2}\]|\[[a-z]{2}\+DE\]|ger,\s*[a-z]{3}\]|\[[a-z]{3}\s*,\s*ger\]'
+description: Matches German Dual Language release markers (German.DL, DL after German excluding WEB-DL, [DE+EN]/[EN+DE] tags, [ger,eng]/[eng,ger] tags).
+tags:
+- Language
+- German
+tests:
+- id: 1
+  input: Movie.2024.German.DL.1080p.WEB-DL.x265-GROUP
+  expected: true
+- id: 2
+  input: Movie.2024.GERMAN.DL.1080p.BluRay.x264-GROUP
+  expected: true
+- id: 3
+  input: Movie.2024.German.DL.[DE+EN].1080p.WEB.x265-GROUP
+  expected: true
+- id: 4
+  input: Movie.2024.1080p.WEB-DL.x264-GROUP
+  expected: false
+- id: 5
+  input: Movie.2024.German.1080p.WEB-DL.x264-GROUP
+  expected: false

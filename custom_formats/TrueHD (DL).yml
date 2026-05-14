@@ -1,0 +1,18 @@
+name: TrueHD (DL)
+description: TrueHD audio paired with German Dual Language — offsets the TrueHD deny in streaming-optimized Movies profiles to allow HD audio for DL releases.
+tags:
+- Audio
+- Language
+- German
+conditions:
+- name: TrueHD
+  type: release_title
+  pattern: TrueHD
+  required: true
+  negate: false
+- name: German DL Title
+  type: release_title
+  pattern: German Dual Language
+  required: true
+  negate: false
+tests: []

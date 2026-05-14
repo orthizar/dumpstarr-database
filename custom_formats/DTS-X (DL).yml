@@ -1,0 +1,18 @@
+name: DTS-X (DL)
+description: DTS-X audio paired with German Dual Language — offsets the DTS-X deny for DL releases.
+tags:
+- Audio
+- Language
+- German
+conditions:
+- name: DTS-X
+  type: release_title
+  pattern: DTS-X
+  required: true
+  negate: false
+- name: German DL Title
+  type: release_title
+  pattern: German Dual Language
+  required: true
+  negate: false
+tests: []

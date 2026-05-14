@@ -1,0 +1,23 @@
+name: No DE No EN
+description: Matches releases that have neither German nor English audio (used to hard-reject FR/ES/IT/RU/PL/etc.).
+tags:
+- Language
+conditions:
+- name: Not English
+  type: language
+  language: english
+  exceptLanguage: false
+  required: true
+  negate: true
+- name: Not German
+  type: language
+  language: german
+  exceptLanguage: false
+  required: true
+  negate: true
+- name: Not German DL Title
+  type: release_title
+  pattern: German Dual Language
+  required: true
+  negate: true
+tests: []

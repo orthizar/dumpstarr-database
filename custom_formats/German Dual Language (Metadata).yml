@@ -1,0 +1,19 @@
+name: German Dual Language (Metadata)
+description: Matches releases whose audio metadata contains both German and English tracks, regardless of title naming.
+tags:
+- Language
+- German
+conditions:
+- name: Includes English
+  type: language
+  language: english
+  exceptLanguage: false
+  required: true
+  negate: false
+- name: Includes German
+  type: language
+  language: german
+  exceptLanguage: false
+  required: true
+  negate: false
+tests: []

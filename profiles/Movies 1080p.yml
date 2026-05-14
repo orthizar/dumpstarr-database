@@ -15,7 +15,7 @@ tags:
 - 1080p
 upgradesAllowed: true
 minCustomFormatScore: 750
-upgradeUntilScore: 10000
+upgradeUntilScore: 15000
 minScoreIncrement: 1
 custom_formats: []
 custom_formats_radarr:
@@ -129,6 +129,30 @@ custom_formats_radarr:
   score: -10000
 - name: Upscaled
   score: -10000
+- name: TrueHD (DL)
+  score: 10000
+- name: DTS-HD MA (DL)
+  score: 10000
+- name: DTS-HD HRA (DL)
+  score: 10000
+- name: DTS-X (DL)
+  score: 10000
+- name: German Dual Language
+  score: 5000
+- name: German Dual Language (Metadata)
+  score: 5000
+- name: English Only
+  score: 2500
+- name: German Only
+  score: 1500
+- name: x265 (HD)
+  score: 200
+- name: Bad Dual Groups
+  score: -10000
+- name: MIC DUB
+  score: -10000
+- name: No DE No EN
+  score: -10000
 custom_formats_sonarr: []
 qualities:
 - id: 10
@@ -155,4 +179,4 @@ upgrade_until:
   id: 10
   name: Bluray-1080p
   description: 1080p Blu-ray video encoded with lossy compression
-language: must_original
+language: any

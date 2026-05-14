@@ -11,7 +11,7 @@ tags:
 - 1080p
 upgradesAllowed: true
 minCustomFormatScore: 0
-upgradeUntilScore: 10000
+upgradeUntilScore: 15000
 minScoreIncrement: 1
 custom_formats: []
 custom_formats_radarr: []
@@ -170,6 +170,22 @@ custom_formats_sonarr:
   score: -10000
 - name: Whose Line (Not US Version)
   score: -10000
+- name: German Dual Language
+  score: 5000
+- name: German Dual Language (Metadata)
+  score: 5000
+- name: English Only
+  score: 2500
+- name: German Only
+  score: 1500
+- name: x265 (HD)
+  score: 200
+- name: Bad Dual Groups
+  score: -10000
+- name: MIC DUB
+  score: -10000
+- name: No DE No EN
+  score: -10000
 qualities:
 - id: -2
   name: WEB 1080p
@@ -214,4 +230,4 @@ qualities:
 upgrade_until:
   id: -2
   name: WEB 1080p
-language: must_original
+language: any

@@ -1,0 +1,13 @@
+name: MIC DUB
+description: Matches German mic-dubbed (theatre bootleg) releases.
+tags:
+- Language
+- German
+- Banned
+conditions:
+- name: MIC DUB
+  type: release_title
+  pattern: MIC DUB
+  required: true
+  negate: false
+tests: []

@@ -1,0 +1,23 @@
+name: English Only
+description: Matches releases with English audio only — excludes German audio and German DL title markers.
+tags:
+- Language
+conditions:
+- name: Includes English
+  type: language
+  language: english
+  exceptLanguage: false
+  required: true
+  negate: false
+- name: Not German
+  type: language
+  language: german
+  exceptLanguage: false
+  required: true
+  negate: true
+- name: Not German DL Title
+  type: release_title
+  pattern: German Dual Language
+  required: true
+  negate: true
+tests: []

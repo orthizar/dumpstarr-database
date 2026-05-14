@@ -1,0 +1,12 @@
+name: German Dual Language
+description: Matches releases with German Dual Language (DE/EN) markers in the title.
+tags:
+- Language
+- German
+conditions:
+- name: German DL Title
+  type: release_title
+  pattern: German Dual Language
+  required: true
+  negate: false
+tests: []
